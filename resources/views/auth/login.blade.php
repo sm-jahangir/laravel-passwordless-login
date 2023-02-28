@@ -56,14 +56,17 @@
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Login') }}
                                 </button>
-
+                                OR
+                                <button type="submit" class="btn btn-success" name="submit" value="password-less">
+                                    Password Less Login
+                                </button>
+                                <br/>
                                 @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}">
                                         {{ __('Forgot Your Password?') }}
                                     </a>
                                 @endif
                             </div>
-                        </div>
                     </form>
                 </div>
             </div>
